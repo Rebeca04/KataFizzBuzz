@@ -12,7 +12,7 @@ package com.cifpcarballeira.katas.FizzBuzz;
 public class FizzBuzz {
  
     public String getFizzBuzz(int i) {
-        
+        //rama contiene 5
         if (i%5 == 0 && i%3 == 0) {
             return "FizzBuzz";
         }
