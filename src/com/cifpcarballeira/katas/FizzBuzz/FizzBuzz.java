@@ -12,14 +12,15 @@ package com.cifpcarballeira.katas.FizzBuzz;
 public class FizzBuzz {
  
     public String getFizzBuzz(int i) {
+        String num = i+"";
         
-        if (i%5 == 0 && i%3 == 0) {
+        if ((i%5 == 0 || num.contains("5")) && (i%3 == 0 || num.contains("3"))) {
             return "FizzBuzz";
         }
-        else if (i%3 == 0) {
+        else if (i%3 == 0 || num.contains("3")) {
             return "Fizz";
         }
-        else if (i%5 == 0) {
+        else if (i%5 == 0 || num.contains("5")) {
             return "Buzz";
         }
         else {
